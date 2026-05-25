@@ -8,23 +8,6 @@ const Navbar = () => {
     <>
       {/* TOP HEADER */}
 
-      {/* <div className="top-header">
-        <div className="top-left">
-          <a href="tel:+919638666607" className="top-link">
-              📞 +91 9638666607
-           </a>
-          <a href="mailto:care@ganpatibags.com" className="top-link">
-              ✉ care@ganpatibags.com
-           </a>
-          <span>|</span>
-          <span>🕘 9:00 AM to 7:00 PM</span>
-        </div>
-
-        <div className="top-right">
-          <button>Get it on Play Store</button>
-          <button>Download on App Store</button>
-        </div>
-      </div> */}
       <div className="top-header">
   <div className="top-left">
     <a href="tel:+919638666607" className="top-link">
