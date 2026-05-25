@@ -29,12 +29,12 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <a href="/">FB</a>
             <a href="/">IN</a>
             <a href="/">WA</a>
             <a href="/">YT</a>
-          </div>
+          </div> */}
 
           <p className="copyright">
             Copyright © 2026 Ganpati Bags.
