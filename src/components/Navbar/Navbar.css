@@ -532,9 +532,9 @@
     list-style: none;
   }
 
-  .menu-bar ul::-webkit-scrollbar {
+  /* .menu-bar ul::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
   .menu-bar ul li {
     font-size: 14px;
