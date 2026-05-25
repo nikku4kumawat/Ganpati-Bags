@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.explore-section {
+  width: 100%;
+  padding: 30px 20px;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.explore-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+/* DESKTOP GRID */
+ .explore-wrapper {
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  column-gap: 4px; /* left-right gap */
+  row-gap: 25px; /* top-bottom gap */
+}
+
+
+/* CARD */
+.range-card {
+  position: relative;
+  height: 82px;
+  width: 100%;
+  background: linear-gradient(135deg, #0d2c7d, #1b469f);
+  border-radius: 14px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: auto;
+  max-width: 190px;
+}
+
+.range-card:hover {
+  transform: translateY(-4px);
+}
+
+/* LEFT CIRCLE */
+.circle-image {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 92px;
+  height: 92px;
+  background: #cdefff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.circle-image img {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  left: -15px;
+
+}
+
+
+/* TEXT */
+.range-content {
+  text-align: center;
+  color: white;
+}
+
+.range-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.range-content h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .explore-section {
+    padding: 20px 10px;
+    overflow: hidden;
+  }
+
+  .explore-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* HORIZONTAL SCROLL */
+  .explore-wrapper {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .explore-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* SMALL CARD */
+ .range-card {
+  max-width: 130px;
+  height: 62px;
+  width: 130px;
+  background: linear-gradient(135deg, #0d2c7d, #1b469f);
+  border-radius: 12px;
+  flex-shrink: 0;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 34px; /* image ke liye space */
+  padding-right: 0px;
+}
+
+  /* SMALL CIRCLE IMAGE */
+  .circle-image {
+    width: 65px;
+    height: 65px;
+    left: -12px;
+  }
+
+  .circle-image img {
+    width: 65px;
+    height: 65px;
+  }
+
+
+  /* TEXT */
+.range-content {
+  margin-left: 0;
+  text-align: center;
+  color: white;
+}
+
+  .range-content h3 {
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .range-content h2 {
+    font-size: 22px;
+    margin-top: 2px;
+  }
+}

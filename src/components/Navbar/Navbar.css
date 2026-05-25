@@ -1,0 +1,473 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+  width: 100%;
+  background: #ffffff;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* LEFT SIDE */
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: #111;
+  font-weight: 500;
+}
+
+.top-left span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+/* PHONE + EMAIL LINKS */
+
+.top-link {
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.top-link:hover {
+  color: orangered;
+}
+
+/* RIGHT SIDE */
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* FACEBOOK */
+
+.facebook {
+  background: #1877f2;
+}
+
+/* LINKEDIN */
+
+.linkedin {
+  background: #0077b5;
+}
+
+/* X / TWITTER */
+
+.twitter {
+  background: #000;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MAIN NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-section img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: -35px;
+  margin-bottom: -40px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  margin-left: -70px;
+}
+
+.navbar-title span {
+  color: orangered;
+  margin-left: 4px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+  width: 58%;
+  display: flex;
+  align-items: center;
+}
+
+.search-section input {
+  width: 700px;
+  height: 40px;
+  border: 1px solid #d8d8d8;
+  outline: none;
+  padding: 0 18px;
+  font-size: 15px;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-section button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  background: #ff2d2d;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+/* =========================
+   RIGHT NAV ICONS
+========================= */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.nav-icons span:hover {
+  color: orange;
+}
+
+/* =========================
+   MENU BAR
+========================= */
+.menu-bar {
+  width: 100%;
+  background: linear-gradient(90deg, #021126 0%, #24354d 100%);
+  padding: 0 40px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+.menu-bar ul li {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* REMOVE THIS OLD CSS */
+
+
+/* NEW */
+
+.menu-item,
+.about-item,
+.home-item {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.contact-item{
+  position: relative;
+  height: 100%;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.about-item{
+  position:relative;
+}
+
+.about-dropdown{
+  position:absolute;
+  top:40px;
+  left:0;
+  background:white;
+  width:220px;
+  display:none;
+  flex-direction:column;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  padding:15px;
+  z-index:100;
+}
+
+.about-dropdown a{
+  text-decoration:none;
+  color:black;
+  padding:10px 0;
+}
+
+.about-dropdown a:hover{
+  color:orangered;
+}
+
+.about-item:hover .about-dropdown{
+  display:flex;
+}
+
+/* LINKS */
+
+.menu-bar ul li > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-bar ul li a:hover {
+  color: orange;
+}
+/* =========================
+   PRODUCT DROPDOWN
+========================= */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1000px;
+  background: white;
+  padding: 30px;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.dropdown-column h3 {
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.dropdown-column p {
+  color: #555;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown-column p:hover {
+  color: orange;
+}
+
+.menu-item:hover .dropdown {
+  display: grid;
+}
+
+/* =========================
+   ABOUT DROPDOWN
+========================= */
+
+.about-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background: white;
+  display: none;
+  flex-direction: column;
+  padding: 15px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.about-dropdown p {
+  padding: 12px 20px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.about-dropdown p:hover {
+  background: #f5f5f5;
+  color: orange;
+}
+
+.about-item:hover .about-dropdown {
+  display: flex;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-section {
+    width: 100%;
+  }
+
+  .search-section input {
+    width: 100%;
+  }
+
+  .dropdown {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* TOP HEADER */
+
+  .top-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .top-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .top-right {
+    margin-top: 5px;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .logo-section img {
+    width: 150px;
+    height: auto;
+    margin: 0;
+  }
+
+  .navbar-title {
+    margin-left: 0;
+    font-size: 28px;
+  }
+
+  .search-section {
+    width: 100%;
+  }
+
+  .search-section input {
+    width: 100%;
+  }
+
+  /* MENU */
+
+  .menu-bar ul {
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .menu-bar ul li {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .dropdown {
+    grid-template-columns: 1fr;
+    width: 95vw;
+  }
+}
