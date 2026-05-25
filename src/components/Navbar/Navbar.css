@@ -431,7 +431,10 @@
 
   .navbar {
     padding: 15px;
-    gap: 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .logo-section img {
